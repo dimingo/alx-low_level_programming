@@ -1,0 +1,2 @@
+#!/bin/basih
+cpp -P $CFILE > c
