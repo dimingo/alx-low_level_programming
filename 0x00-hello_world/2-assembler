@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILE
+gcc -c -S $CFILE -o i"${CFILE%.c}.s"
