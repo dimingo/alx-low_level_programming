@@ -1,2 +1,2 @@
-#!/bin/basih
-cpp -P $CFILE > c
+#!/bin/bash
+gcc -c $CFILE > c
