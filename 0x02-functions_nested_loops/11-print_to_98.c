@@ -3,7 +3,8 @@
 #include <stdio.h>
 /**
  * print_to_98 prints - prints 98
- *@n: integer to check
+ * @n: integer to check
+ * Description: 'the program's description'
  * Return: always 0;
  *
  */
