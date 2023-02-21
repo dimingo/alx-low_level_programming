@@ -6,5 +6,6 @@
  * Return: 1 or 0
  */
 int _putchar(char c);
+void print_alphabet(void);
 
 #endif
