@@ -2,7 +2,7 @@
 #include "6-abs.c"
 #include <stdio.h>
 /**
- * print_to_98 prints - prints 98
+ * print_to_98 - prints 98
  * @n: integer to check
  * Description: 'the program's description'
  * Return: always 0;
