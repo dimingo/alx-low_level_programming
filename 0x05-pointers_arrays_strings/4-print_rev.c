@@ -6,10 +6,10 @@
  */
 void print_rev(char *s)
 {
-	while (*str)
+	while (*s)
 	{
-		printif("%c", *str);
-		str--;
+		printf("%c", *s);
+		s--;
 	}
 	printf("\n");
 }
