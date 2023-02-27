@@ -7,8 +7,9 @@
  */
 void _puts(char *str)
 {
-	char a[] = *str;
-
-	printf("%s", a);
+	while(*str != '\0')
+	{
+		printf("%c", *str);
+	}
 	printf("\n");
 }
