@@ -14,8 +14,8 @@ void print_rev(char *s)
 
 	while (len > 0)
 	{
-		printf("%c", *(s +  len-1));
+		putchar("%c", *(s +  len-1));
 		len--;
 	}
-	printf("\n");
+	putchar("\n");
 }
