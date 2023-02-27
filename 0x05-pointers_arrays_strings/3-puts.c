@@ -9,8 +9,8 @@ void _puts(char *str)
 {
 	int n;
 
-	for (n = 0; *s != '\0'; n++)
-		pritnf("%p", *s);
+	for (n = 0; *str != '\0'; n++)
+		printf("%p", *str);
 		n++;
 	printf("\n");
 }
