@@ -10,6 +10,7 @@ char *_strncpy(char *dest, char *src, int n);
 int _strcmp(char *s1, char *s2);
 void reverse_array(int *a, int n);
 char *string_toupper(char *);
+char *cap_string(char *);
 void swap_int(int *a, int *b);
 void print_rev(char *s);
 void rev_string(char *s);
