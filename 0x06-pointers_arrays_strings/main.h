@@ -13,6 +13,7 @@ char *string_toupper(char *);
 char *cap_string(char *);
 char *leet(char *);
 void print_number(int n);
+char *rot13(char *);
 void swap_int(int *a, int *b);
 void print_rev(char *s);
 void rev_string(char *s);
