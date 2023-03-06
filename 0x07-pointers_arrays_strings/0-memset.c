@@ -8,8 +8,15 @@
  * Return: pointer to the memory area s
  */
 char *_memset(char *s, char b, unsigned int n)
-{
-	while (n-- > 0)
+{	
+	unsigned int i;
+
+	i = 0;
+
+	while (i < n)
+	{
 		*s++ = b;
+		i++;
+	}
 	return (s);
 }
