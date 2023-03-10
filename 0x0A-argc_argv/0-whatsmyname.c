@@ -6,7 +6,7 @@
  * @argc : count of the arguments supplied to the program
  * @argv : array of pointers to the strings which are those arguments
  *
- * Return : int (0)
+ * Return: Always 0 (Success)
  */
 int main(int argc, char **argv)
 {
