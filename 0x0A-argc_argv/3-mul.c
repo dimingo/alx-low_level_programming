@@ -9,8 +9,19 @@
  */
 int main(int argc, char *argv[]__attribute__((unused)))
 {
-	/*int num1, num2, result;*/
+	int num1, num2, result;
 
-	printf("%d", argc);
+	if ((argc - 1) < 2 || (argc - 1) > 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	if ((argc - 1) == 2)
+	{
+		num1 = atoi(argv[1]);
+		num2 = atoi(argv[2]);
+		result = num1 * num2;
+	}
+	printf("%d\n", result);
 	return (0);
 }
