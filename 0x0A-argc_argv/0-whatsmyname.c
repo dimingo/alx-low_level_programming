@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - print filename
+ * @argc : count of the arguments supplied to the program
+ * @argv : array of pointers to the strings which are those arguments
+ *
+ * Return : int (0)
+ */
 int main(int argc, char **argv)
 {
 	if (argc)
