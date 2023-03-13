@@ -6,12 +6,13 @@
  * @s1 : string 1
  * @s2 : string 2
  *
- * Return : NULL or pointer to memory space
+ * Return: NULL or pointer to memory space
  */
 char *str_concat(char *s1, char *s2)
 {
 	char *result;
 	int len1, i, j, len2;
+
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -22,7 +23,6 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	len1 = len2 = i = j = 0;
-
 	while (*(s1 + len1) != '\0')
 	{
 		len1++;
@@ -31,9 +31,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		len2++;
 	}
-
 	result = malloc((len1 + len2 + 1) * sizeof(char));
-
 	if (result == NULL)
 	{
 		return (NULL);
@@ -49,6 +47,5 @@ char *str_concat(char *s1, char *s2)
 		j++;
 	}
 	result[i + j] = '\0';
-
 	return (result);
 }
