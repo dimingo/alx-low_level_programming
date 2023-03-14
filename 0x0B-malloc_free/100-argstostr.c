@@ -38,10 +38,13 @@ char *argstostr(int ac, char **av)
 		arg = av[j];
 		while (*arg != '\0')
 		{
-			str[pos] = *arg++;
+			str[pos] = *arg;
+			pos++;
+			arg++;
 		}
-		str[pos++] = '\n';
+		str[pos] = '\n';
+		pos++;
 	}
-	str[pos	- 1] = '\0';
+	str[pos	+ 1] = '\n';
 	return (str);
 }
