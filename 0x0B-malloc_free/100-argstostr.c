@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
-
+#include <string.h>
 /**
  * *argstostr - concatenates all the arguments of your program,
  * @ac: srguments count
@@ -10,12 +10,12 @@
  */
 char *argstostr(int ac, char **av)
 {
-	char *newStr, *arg;
+	char *str, *arg;
 	int length, pos, i, j;
 
-	length = i = poss = 0;
+	length = i = pos = 0;
 
-	if ((ac == 0) || (**av == NULL))
+	if ((ac == 0) || (av == NULL))
 	{
 		return (NULL);
 	}
@@ -33,15 +33,15 @@ char *argstostr(int ac, char **av)
 	}
 	j = 0;
 
-	for (; j < ac; i++)
+	for (; j < ac; j++)
 	{
-		*arg = av[i];
+		arg = av[j];
 		while (*arg != '\0')
 		{
 			str[pos] = *arg++;
 		}
-		str[pos++] = '\0';
+		str[pos++] = '\n';
 	}
-	str[pos	- 1] = 0;
+	str[pos	- 1] = '\0';
 	return (str);
 }
